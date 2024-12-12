@@ -8,5 +8,5 @@ This script is designed for brute-forcing directories during penetration testing
 
 ## Features
 
-- Directory brute-forcing.
+- Directory brute-forcing, content scraping of found links.
 - Supports manual configuration for routing through Tor by modifying the proxy settings in the `requests.get()` function.
