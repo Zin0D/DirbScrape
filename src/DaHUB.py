@@ -64,16 +64,19 @@ if __name__ == "__main__":
                 sys.exit()
         
         case 2:
-            print(Art)
-            BrutForceDirToParse.clean_files()
-            BrutForceDirToParse.start_threads()
-            BrutForceDirToParse.host_list() 
-            CMWebScraper.WebScraper.web_scraping()
-            print(Art2)
-            for x in CMWebScraper.WebScraper.anchor_filter(): #Uncomment to get Sorted List.
-                print(x)
-            BrutForceDirToParse.clean_files()
-            
+            try:
+                print(Art)
+                BrutForceDirToParse.clean_files()
+                BrutForceDirToParse.start_threads()
+                BrutForceDirToParse.host_list() 
+                CMWebScraper.WebScraper.web_scraping()
+                print(Art2)
+                for x in CMWebScraper.WebScraper.anchor_filter(): #Uncomment to get Sorted List.
+                    print(x)
+                BrutForceDirToParse.clean_files()
+            except:
+                print("No directories found: Did you forget to change your WORDLIST? ") 
+                BrutForceDirToParse.clean_files()   
 
         case 3:
             words = BrutForceDirToParse.get_words()
