@@ -8,7 +8,7 @@ from tqdm import tqdm
 
 AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" #Trick the Server.
 EXTENSIONS = [".php",".bak",".txt",".inc",".orig",".js"]
-TARGET = "http://testphp.vulnweb.com" #Without /, or you get goofy output bro.
+TARGET = "http://testphp.vulnweb.com" #Without /, or you get goofy output bro. 
 THREADS = 20  
 WORDLIST = "testy.txt" #Input your Wordlist Path
 parsed_list = [] #All Objects, 200
@@ -16,6 +16,10 @@ PROXIE = { #Configuring the Tor Proxy.
     "http" : "socks5://127.0.0.1:9050",
     "https" : "socks5://127.0.0.1:9050"
 }
+
+""" Use Proxies to route through TRAFFIC! """
+testing_IfTorTrue = 'https://check.torproject.org/' #Save for later use cases.
+
 
 def get_words():
     words = queue.Queue() #List for each word to be appended to

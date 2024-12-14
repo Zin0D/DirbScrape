@@ -7,7 +7,7 @@ import sys
 import CMWebScraper
 import BrutForceDirToParse
 import FUZZINGPOC
-from typing import final
+from typing import final 
 #Abstraction.
 #Store Stuff.
 

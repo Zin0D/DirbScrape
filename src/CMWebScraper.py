@@ -13,6 +13,7 @@ PROXIE = { #Configuring the Tor Proxy.
     "http" : "socks5://127.0.0.1:9050",
     "https" : "socks5://127.0.0.1:9050"
 }
+testing_IfTorTrue = 'https://check.torproject.org/' #Save for later use cases.
 
 
 """ Also building a simple SSH-Brut Force login Script"""
