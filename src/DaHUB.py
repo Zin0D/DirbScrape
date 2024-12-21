@@ -11,6 +11,8 @@ from typing import final
 #Abstraction.
 #Store Stuff.
 
+""" https://youtu.be/hoPnJTaNSrc?si=Tc92v-KH4JovH_36 """ 
+
 Art =r""" 
                       __    
 (\,------------------'()'--o

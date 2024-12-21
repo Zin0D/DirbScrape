@@ -13,8 +13,8 @@ THREADS = 20
 WORDLIST = "apache.txt" #Input your Wordlist Path
 parsed_list = [] #All Objects, 200
 PROXIE = { #Configuring the Tor Proxy.
-    "http" : "socks5://127.0.0.1:9050",
-    "https" : "socks5://127.0.0.1:9050"
+    "http" : "socks5h://127.0.0.1:9050",
+    "https" : "socks5h://127.0.0.1:9050"
 }
 
 """ Use Proxies to route through TRAFFIC! """
@@ -45,6 +45,7 @@ def get_words():
     '/hello/',    # as a directory
     '/hello.php', # file with .php extension
     '/hello.bak', # file with .bak extension
+    
     '/hello.txt', # file with .txt extension
     '/hello.inc', # file with .inc extension
     '/hello.orig',# file with .orig extension
