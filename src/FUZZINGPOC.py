@@ -31,11 +31,11 @@ class Fuzzer():
             if range_end == counter:
                 sys.exit()
                 
-            host_brutforce ="ping 192.168.178." #Changed to Ping, for POC.
+            host_brutforce ="Hazard S-1-5-21-4254423774-1266059056-3197185112-" #Changed to Ping, for POC.
             
             fuzzed_part = number_fuzz + counter + 1
             fuzzed_part = str(fuzzed_part)
-            enum = host_brutforce + fuzzed_part + " -n 1"
+            enum = host_brutforce + fuzzed_part 
             os.system(enum)
             time.sleep(0.5)
                 

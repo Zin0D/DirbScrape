@@ -7,7 +7,7 @@ import time
 from tqdm import tqdm
 
 AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" #Trick the Server.
-EXTENSIONS = [".php",".bak",".txt",".inc",".orig",".js"]
+EXTENSIONS = [".php",".bak",".txt",".inc",".orig",".js",]
 TARGET = "http://testphp.vulnweb.com" #Without /, or you get goofy output bro. 
 THREADS = 20  
 WORDLIST = "apache.txt" #Input your Wordlist Path
@@ -41,6 +41,7 @@ def get_words():
     return words #Returns the Quequqe
 
 #How Queque Should look like, for each Element x inside of the Wordlist.
+#FIFO principle
 """ [
     '/hello/',    # as a directory
     '/hello.php', # file with .php extension
